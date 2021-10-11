@@ -1,0 +1,24 @@
+[tool.poetry]
+authors = ["Gabriele N. Tornetta <phoenix1987@gmail.com>"]
+description = "GitHub Action script runner"
+license = "GPL3+"
+name = "gash"
+packages = [
+  {include = "gash"},
+]
+version = "0.1.0"
+
+[tool.poetry.scripts]
+gash = 'gash.__main__:main'
+
+[tool.poetry.dependencies]
+PyYAML = "^5.4.1"
+python = "^3.6"
+typer = "^0.4.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
